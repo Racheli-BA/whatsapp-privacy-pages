@@ -13,7 +13,7 @@
 </head>
 <body>
   <h1>Privacy Policy – WhatsApp Lead Intake POC</h1>
-  <p class="meta"><strong>Effective date:</strong> October 13, 2026</p>
+  <p class="meta"><strong>Effective date:</strong> October 14, 2026</p>
 
   <p><strong>מבנה מקבוצת גפן ביטוח ופיננסים</strong> (“we”, “us”, or “our”) operates a limited Proof of Concept (“POC”) for receiving business lead information through a dedicated WhatsApp Business number.</p>
 
@@ -36,17 +36,17 @@
   <p>Only content that is intentionally sent or forwarded to the dedicated WhatsApp Business intake number may enter this POC flow.</p>
 
   <h2>2. Current POC behavior</h2>
-  <p>The POC currently validates the integration and is preparing a strictly isolated SANDBOX text-intake trial. When enabled, the trial may securely retain text messages and basic processing metadata from authorized business senders, including customer contact information included in those messages.</p>
+  <p>The POC operates as an isolated SANDBOX business lead-intake trial. When the relevant trial features are enabled, it may retain intentionally forwarded business text, contact cards containing names and phone numbers, supported PDF documents and JPEG/PNG images, and the metadata needed to group and review that content.</p>
   <p>At this stage:</p>
   <ul>
     <li>The original webhook POC does not yet automatically create production Leads</li>
-    <li>In the isolated SANDBOX text trial, if and when enabled, message content and sender/message identifiers may be stored as provisional intake records to group forwarded business lead messages and support manual manager review</li>
+    <li>In the isolated SANDBOX trial, message content, selected contact-card fields and sender/message identifiers may be stored as provisional intake records to group forwarded business lead messages, allow an authorized employee to claim an item, and support manager review</li>
     <li>Provisional intake records are not by themselves production Leads, and identifying a referral source (Leader) requires manager confirmation</li>
-    <li>Files and media are not included in the current text-only storage trial</li>
+    <li>When media intake is enabled, supported files up to 10MB may be downloaded from Meta and retained in private storage. Files are made available only after an application access check to an authorized manager or the employee assigned to the item. Unsupported or unavailable files may be represented by a status entry</li>
     <li>The webhook may record limited technical metadata in server logs for testing, debugging, security, and integration validation</li>
   </ul>
 
-  <p>Such technical metadata may include whether a message was received, message type, sender identifier, and similar non-secret operational information.</p>
+  <p>Application logs are limited to processing counts and generic error categories. Message contents, contact details, media download URLs, access tokens and other secrets are not intentionally written to application logs.</p>
 
   <h2>3. How we use information</h2>
   <p>Information received through the POC may be processed only for purposes such as:</p>
@@ -73,12 +73,12 @@
 
   <h2>5. Data retention</h2>
   <p>We aim to retain POC information only for the minimum period necessary for technical testing, troubleshooting, security, and compliance purposes.</p>
-  <p>The original webhook POC did not retain message content. The proposed SANDBOX text-intake trial, once enabled, may retain authorized business text content in restricted, non-public intake storage for processing and manager review. We aim to limit retention to what is necessary for that limited trial and applicable obligations. Files and media remain out of scope. You may request deletion using the contact information below.</p>
+  <p>The original webhook POC did not retain message content. The SANDBOX trial may retain authorized business text, selected contact-card details, supported files and related processing history in restricted, non-public storage for the limited trial and applicable obligations. A private file copy can remain available after its temporary Meta download URL expires. We aim to limit retention to what is necessary and review retained trial information when the trial ends. You may request deletion using the contact information below.</p>
   <p>Limited technical logs may be retained by the hosting infrastructure according to the applicable system and platform settings.</p>
 
   <h2>6. Data security</h2>
   <p>We use reasonable technical and organizational measures to protect information processed through the POC.</p>
-  <p>Access to technical systems and business information is limited to authorized personnel.</p>
+  <p>Access to technical systems and business information is limited to authorized personnel. Automated text redaction is designed to remove recognized payment-card patterns. It does not inspect or redact the contents of documents or images. Do not send payment-card details, passwords or unnecessary sensitive information in text, contact cards or files.</p>
 
   <h2>7. Your rights and deletion requests</h2>
   <p>You may contact us to request access, correction, or deletion of personal information associated with your WhatsApp interaction.</p>
@@ -93,7 +93,7 @@
 
   <h2>8. Changes to this policy</h2>
   <p>This policy applies to the current WhatsApp Lead Intake POC.</p>
-  <p>If the integration is expanded to production lead creation, media storage, or additional processing, this Privacy Policy will be reviewed and updated before those features are enabled. The isolated SANDBOX text-intake trial does not authorize production deployment.</p>
+  <p>This update describes the optional SANDBOX contact-card and private-file trial. Any expansion to production lead creation or additional processing requires a separate review. The isolated SANDBOX trial does not authorize production deployment.</p>
 
   <h2>9. Contact</h2>
   <p><strong>מבנה מקבוצת גפן ביטוח ופיננסים</strong><br>
